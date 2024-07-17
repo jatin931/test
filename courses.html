@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>Entrance Wizard</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="assets/img/unnamed.jpg" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+
+  <!-- Main CSS File -->
+  <link href="assets/css/main.css" rel="stylesheet">
+</head>
+
+<body class="service-details-page">
+
+  <header id="header" class="header d-flex align-items-center position-relative">
+    <div class="container-fluid container-xl position-relative d-flex align-items-center justify-content-between">
+
+      <a href="index.html" class="logo d-flex align-items-center me-auto me-lg-0">
+        <img src="assets\img\Entrance Wizard Logo-03.svg" alt="logo" height="100%" width="100%">
+        <!-- <h1 class="sitename">Entrance Wizard</h1>-->
+        <span>.</span>
+      </a>
+
+      <nav id="navmenu" class="navmenu">
+        <ul>
+          <li><a href="index.html" class="active">Home<br></a></li>
+          <li class="dropdown"><a href="#"><span>Online Exams</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+            <ul>
+              <li class="dropdown"><a href="#"><span>CLAT</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+                <ul>
+                  <li><a href="onlineprogram.html" data-target="CLAT">UG CLAT</a></li>
+                  <li><a href="onlineprogram.html">PG CLAT</a></li>
+                </ul>
+              </li>
+              <li class="dropdown"><a href="#"><span>CUET</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+                <ul>
+                  <li><a href="onlineprogram.html">UG CUET</a></li>
+                  <li><a href="onlineprogram.html">PG CUET</a></li>
+                </ul>
+              </li>
+              <li><a href="onlineprogram.html">11TH & 12TH BOARD</a></li>
+            </ul>
+          </li>
+          <!--<li><a href="#services">Program</a></li>-->
+          <li><a href="index.html#portfolio">Books</a></li>
+          <li><a href="index.html#stats">Test Series</a></li>
+          <li><a href="#">Daily Current Affairs</a></li>
+          <li><a href="index.html#contact">Contact</a></li>
+          <li><a href="https://www.youtube.com/@entrance_wizard">Free Classes</a></li>
+        </ul>
+        <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+      </nav>
+
+      <a class="btn-getstarted" href="https://play.google.com/store/apps/details?id=com.appx.entrance_wizard&hl=en">Download</a>
+
+    </div>
+  </header>
+
+  <main class="main">
+    <div class="page-title" data-aos="fade">
+      <nav class="breadcrumbs">
+        <div class="container">
+          <ol>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="onlineprogram.html">Online Exams</a></li>
+            <li class="current">Enroll Now</li>
+          </ol>
+        </div>
+      </nav>
+    </div>
+    
+    <section class="container" data-aos="fade">
+     <!-- <h1>Select from the range of courses below</h1>
+      <p>The more courses you select, the bigger your additional discount grows!</p>
+    -->
+      <form id="course-selection-form" action="store_selection.php" method="post">
+          <div class="course-selection">
+              <div class="domain-subjects">
+                  <h2><b>Domain Subjects</b></h2>
+                  <hr>
+                  <div class="subject-category">
+                      <h3>Science</h3>
+                      <label><input type="checkbox" name="courses[]" value="Physics"> Physics</label>
+                      <label><input type="checkbox" name="courses[]" value="Chemistry"> Chemistry</label>
+                      <label><input type="checkbox" name="courses[]" value="Mathematics"> Mathematics</label>
+                      <label><input type="checkbox" name="courses[]" value="Biology"> Biology</label>
+                  </div>
+                  <hr>
+                  <div class="subject-category">
+                      <h3>Commerce</h3>
+                      <label><input type="checkbox" name="courses[]" value="Accounts"> Accounts</label>
+                      <label><input type="checkbox" name="courses[]" value="Business Studies"> Business Studies</label>
+                      <label><input type="checkbox" name="courses[]" value="Economics"> Economics</label>
+                      <label><input type="checkbox" name="courses[]" value="Applied Mathematics"> Mathematics</label>
+                  </div>
+                  <hr>
+                  <div class="subject-category">
+                      <h3>Humanities</h3>
+                      <label><input type="checkbox" name="courses[]" value="History"> History</label>
+                      <label><input type="checkbox" name="courses[]" value="Geography"> Geography</label>
+                      <label><input type="checkbox" name="courses[]" value="Political Science"> Political Science</label>
+
+                  </div>
+              </div>
+              <hr>
+              <div class="language-general-test">
+                  <h2>Language and General Test</h2>
+                  <hr>
+                  <label><input type="checkbox" name="courses[]" value="English"> English</label>
+                  <label><input type="checkbox" name="courses[]" value="Hindi"> Hindi</label>
+                  <label><input type="checkbox" name="courses[]" value="General Test"> General Test</label>
+              </div>
+          </div>
+          <hr>
+          <div class="fee-calculation">
+              <h2>Fee Calculation</h2>
+              <table>
+                  <tr>
+                      <th>Course</th>
+                      <th>Actual Price</th>
+                      <th>Offer Price</th>
+                  </tr>
+                  <tbody id="selected-course">
+                      <!-- Selected courses will be inserted here by JavaScript -->
+                  </tbody>
+              </table>
+              <div class="total-price">
+                  <p>Total Price: <span id="total-price">&#8377; 2,999</span></p>
+              </div>
+              <button type="button" onclick="enrollNow()">Enroll Now</button>
+          </div>
+      </form>
+  </section>
+
+  <!-- Popup Form -->
+  <div id="popup-form" class="popup">
+      <div class="popup-content">
+          <span class="close-btn" onclick="closePopup()">&times;</span>
+          <h2>User Details</h2>
+          <form id="user-details-form" action="store_user_details.php" method="post">
+              <label for="name">Name:</label>
+              <input type="text" id="name" name="name" required>
+              
+              <label for="email">Email:</label>
+              <input type="email" id="email" name="email" required>
+              
+              <label for="phone">Phone:</label>
+              <input type="text" id="phone" name="phone" required>
+              
+              <input type="hidden" id="selected-courses" name="selected_courses"><br>
+              
+              <button type="submit">Submit</button>
+          </form>
+    </div>
+  </div>
+
+    
+
+  </main>
+
+<footer id="footer" class="footer dark-background">
+
+  <div class="footer-top">
+    <div class="container">
+      <div class="row gy-4">
+        <div class="col-lg-4 col-md-6 footer-about">
+          <a href="index.html" class="logo d-flex align-items-center">
+            <span class="sitename"> <img src="assets\img\Entrance Wizard Logo-03.svg" alt="logo" height="100%" width="100%"></span>
+          </a>
+          <div class="footer-contact pt-3">
+            <p><a href="https://maps.app.goo.gl/GsuqwggonquPFsFN7">56, Mall Rd, Kingsway Camp,</p>
+            <p> GTB Nagar, Delhi, 110009</a></p>
+            <p class="mt-3"><strong>Phone:</strong> <span><a href="+919333994449">+91 93339-94449</a></span></p>
+            <p><strong>Email:</strong> <span><a href="info@entrancewizard.com">info@entrancewizard.com</a></span></p>
+          </div>
+          <div class="social-links d-flex mt-4">
+            <!--<a href=""><i class="bi bi-twitter-x"></i></a>-->
+            <a href="https://www.facebook.com/EntranceWizard/"><i class="bi bi-facebook"></i></a>
+            <a href="https://www.instagram.com/entrancewizard?igsh=MWl4b2Zpa3lhZ3Z1cg=="><i class="bi bi-instagram"></i></a>
+            <a href="https://t.me/entrancewizard"><i class="bi bi-telegram"></i></a>
+            <a href="https://wa.me/+919333994449"><i class="bi bi-whatsapp"></i></a>
+            <a href="https://play.google.com/store/apps/details?id=com.appx.entrance_wizard&hl=en"><i class="bi bi-google-play"></i></a>
+          </div>
+        </div>
+
+        <div class="col-lg-2 col-md-3 footer-links">
+          <h4>Useful Links</h4>
+          <ul>
+            <li><i class="bi bi-chevron-right"></i> <a href="#"> Home</a></li>
+            <li><i class="bi bi-chevron-right"></i> <a href="onlineprogram.html"> Online Exams</a></li>
+            <li><i class="bi bi-chevron-right"></i> <a href="#portfolio"> Books</a></li>
+            <li><i class="bi bi-chevron-right"></i> <a href="#contact"> Contact</a></li>
+            
+          </ul>
+        </div>
+
+        <div class="col-lg-2 col-md-3 footer-links">
+          <h4>Our Services</h4>
+          <ul>
+            <li><i class="bi bi-chevron-right"></i> <a href="#"> CLAT Exam Preparation</a></li>
+            <li><i class="bi bi-chevron-right"></i> <a href="#"> CUET Exam Preparation</a></li>
+            <li><i class="bi bi-chevron-right"></i> <a href="#"> CBSE 11 <sup>th</sup>And 12<sup>th</sup>Exam</a></li>
+          </ul>
+        </div>
+<!--
+        <div class="col-lg-4 col-md-12 footer-newsletter">
+          <h4>Our Newsletter</h4>
+          <p>Subscribe to our newsletter and receive the latest news about our products and services!</p>
+          <form action="forms/newsletter.php" method="post" class="php-email-form">
+            <div class="newsletter-form"><input type="email" name="email"><input type="submit" value="Subscribe">
+            </div>
+            <div class="loading">Loading</div>
+            <div class="error-message"></div>
+            <div class="sent-message">Your subscription request has been sent. Thank you!</div>
+          </form>
+        </div>-->
+      </div>
+      <img src="assets/img/entrance-app.jpg" alt="QR code" height="70px" width="70px" align="right">
+    </div>
+  </div>
+
+
+  <div class="copyright">
+    <div class="container text-center">
+      <p>© <span>Copyright</span> <strong class="px-1 sitename">Entrance Wizard</strong> <span>Pvt Ltd.</span></p>
+    </div>
+  </div>
+
+</footer>
+
+
+<div id="enrollment-container" class="enrollment-container">
+  <!-- Content of the enrollment container -->
+  
+</div>
+
+  <!-- Scroll Top -->
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Preloader -->
+  <div id="preloader"></div>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+
+  <!-- Main JS File -->
+  <script src="assets/js/main.js"></script>
+  
+</body>
+
+<script>
+document.addEventListener('DOMContentLoaded', () => {
+    const courseCheckboxes = document.querySelectorAll('input[type="checkbox"]');
+    const selectedCourseTable = document.getElementById('selected-course');
+    const totalPriceElement = document.getElementById('total-price');
+    const popup = document.getElementById('popup-form');
+    const closeBtn = document.querySelector('.close-btn');
+    const selectedCoursesField = document.getElementById('selected-courses');
+    
+    const courses = {
+        'Accounts': 4999,
+        'Business Studies': 4999,
+        'Economics': 4999,
+        'Applied Mathematics': 4999,
+        'Physics': 4999,
+        'Chemistry': 4999,
+        'Mathematics': 4999,
+        'Biology': 4999,
+        'Physical Education': 4999,
+        'History': 4999,
+        'Geography': 4999,
+        'Political Science': 4999,
+        'Sociology': 4999,
+        'Psychology': 4999,
+        'Legal Studies': 4999,
+        'English': 2999,
+        'Hindi': 2999,
+        'General Test': 5999,
+    };
+
+    const Actual = {
+        'Accounts': 9999,
+        'Business Studies': 9999,
+        'Economics': 9999,
+        'Applied Mathematics': 9999,
+        'Physics': 9999,
+        'Chemistry': 9999,
+        'Mathematics': 9999,
+        'Biology': 9999,
+        'Physical Education': 9999,
+        'History': 9999,
+        'Geography': 9999,
+        'Political Science': 9999,
+        'Sociology': 9999,
+        'Psychology': 9999,
+        'Legal Studies': 9999,
+        'English': 5999,
+        'Hindi': 5999,
+        'General Test': 11999,
+    };
+
+    let selectedCourses = [];
+
+    courseCheckboxes.forEach(checkbox => {
+        checkbox.addEventListener('change', () => {
+            if (checkbox.checked) {
+                selectedCourses.push(checkbox.value);
+            } else {
+                selectedCourses = selectedCourses.filter(course => course !== checkbox.value);
+            }
+            updateFeeCalculation();
+        });
+    });
+
+    function updateFeeCalculation() {
+        selectedCourseTable.innerHTML = '';
+        let totalPrice = 0;
+
+        selectedCourses.forEach(course => {
+            const price = courses[course];
+            const actualPrice = Actual[course]; // Get actual price from Actual object
+            totalPrice += price;
+
+            const row = document.createElement('tr');
+            row.innerHTML = `
+                <td>${course}</td>
+                <td>&#8377; ${actualPrice}</td>
+                <td>&#8377; ${price}</td>
+            `;
+            selectedCourseTable.appendChild(row);
+        });
+
+        totalPriceElement.innerText = `₹ ${totalPrice}`;
+    }
+
+    window.enrollNow = function() {
+        selectedCoursesField.value = selectedCourses.join(', ');
+        openPopup();
+    };
+
+    function openPopup() {
+        popup.style.display = 'block';
+    }
+
+    closeBtn.onclick = function() {
+        closePopup();
+    };
+
+    function closePopup() {
+        popup.style.display = 'none';
+    }
+
+    window.onclick = function(event) {
+        if (event.target === popup) {
+            closePopup();
+        }
+    };
+
+    updateFeeCalculation(); // Initialize with default checked courses
+});
+
+</script>
+</html>
